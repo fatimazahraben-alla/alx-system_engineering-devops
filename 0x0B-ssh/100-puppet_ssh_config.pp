@@ -3,8 +3,9 @@
 file { '/etc/ssh/ssh_config':
   ensure => 'present',
 
-  line   => 
+  line   => '
             host*
-            PasswordAuthentication no,
+            PasswordAuthentication no
             IdentityFile ~/.ssh/school
+            ',
 }
